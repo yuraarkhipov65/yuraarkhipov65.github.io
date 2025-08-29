@@ -12,12 +12,9 @@
     </script>
     <script>
       function onTelegramAuth(user) {
-          fetch('https://gainly.site/auth/api/auth/tgLogin', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(user)
-          }).then(() => alert('Login sent to backend'))
+          Android.onTelegramAuth(JSON.stringify(user));
       }
     </script>
   </body>
 </html>
+

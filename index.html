@@ -8,7 +8,8 @@
     <script async src="https://telegram.org/js/telegram-widget.js?22"
             data-telegram-login="GainlyAuthBot"
             data-size="large"
-            data-onauth="onTelegramAuth(user)">
+            data-request-access="write"
+            data-auth-url="https://yoursite.com/auth">
     </script>
     <script>
       function onTelegramAuth(user) {
